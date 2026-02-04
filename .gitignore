@@ -145,7 +145,7 @@ env.bak/
 venv.bak/
 venv_network_security/
 .venv_network_security
-credentials/
+credientials/
 Data_Housing/
 # Spyder project settings
 .spyderproject

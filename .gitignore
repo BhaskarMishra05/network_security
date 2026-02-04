@@ -144,10 +144,12 @@ ENV/
 env.bak/
 venv.bak/
 venv_network_security/
+.venv_network_security
+credentials/
+Data_Housing/
 # Spyder project settings
 .spyderproject
 .spyproject
-
 # Rope project settings
 .ropeproject
 

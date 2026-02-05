@@ -1,0 +1,14 @@
+[2026-02-05 13:00:13,203] 16 -INFO -Starting data ingestion method
+[2026-02-05 13:00:13,219] 18 -INFO -Database engine loaded
+[2026-02-05 13:00:13,219] 20 -INFO -Executing query on relation final_dataset_with_all_features
+[2026-02-05 13:00:34,883] 22 -INFO -Data fetched into dataframe
+[2026-02-05 13:00:34,883] 23 -INFO -Shape of dataframe: (651000, 65)
+[2026-02-05 13:00:35,328] 27 -INFO -Train test split completed
+[2026-02-05 13:00:35,328] 29 -INFO -Starting training data imputation
+[2026-02-05 13:00:35,328] 11 -INFO -Starting data imputation for table training_dataset
+[2026-02-05 13:01:39,848] 13 -INFO -Completed data imputation for table training_dataset
+[2026-02-05 13:01:39,848] 31 -INFO -Training data imputation completed
+[2026-02-05 13:01:39,848] 33 -INFO -Starting testing data imputation
+[2026-02-05 13:01:39,848] 11 -INFO -Starting data imputation for table testing_dataset
+[2026-02-05 13:02:07,588] 13 -INFO -Completed data imputation for table testing_dataset
+[2026-02-05 13:02:07,588] 35 -INFO -Testing data imputation completed

@@ -1,0 +1,4 @@
+[2026-02-05 12:50:25,525] 16 -INFO -Starting data ingestion method
+[2026-02-05 12:50:25,545] 18 -INFO -Database engine loaded
+[2026-02-05 12:50:25,545] 20 -INFO -Executing query on relation final_dataset_with_all_features
+[2026-02-05 12:50:25,607] 22 -INFO -Data fetched into dataframe

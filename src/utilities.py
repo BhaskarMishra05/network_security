@@ -7,7 +7,7 @@ from sqlalchemy import create_engine
 import yaml
 
 def database_engine_loader():
-    with open ('./credientials/database.yaml','r') as yaml_file_obj:
+    with open ('../credientials/database.yaml','r') as yaml_file_obj:
         config = yaml.safe_load(yaml_file_obj)
 
     db_config = config['database']

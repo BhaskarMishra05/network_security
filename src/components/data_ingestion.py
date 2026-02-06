@@ -43,7 +43,7 @@ class DATA_INGESTION():
 
             return (
                 self.data_ingestion_config_object.testing_dataset_path,
-                self.data_ingestion_config_object.testing_dataset_path
+                self.data_ingestion_config_object.training_dataset_path
             )
         except Exception as e:
             raise CustomException(e,sys)

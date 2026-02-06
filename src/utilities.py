@@ -2,6 +2,7 @@ import os
 import sys
 from sqlalchemy import create_engine
 import yaml
+import pickle
 
 def database_engine_loader():
     with open ('/home/korty/Code_House/VS_CODE/Network Security/credientials/database.yaml','r') as yaml_file_obj:
@@ -15,3 +16,11 @@ def database_engine_loader():
     print(engine)
     return engine
 
+def load_object (file_path: str):
+    with open (file_path, 'rb') as file_object:
+        return pickle.load(file_object)
+    
+def save_object (file_path , object):
+    os.makedirs(os.path.dirname(file_path), exist_ok= True)
+    with open (file_path , 'wb') as file_object:
+        return pickle.dump(object, file_object)

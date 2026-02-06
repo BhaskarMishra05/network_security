@@ -9,3 +9,5 @@ sqlalchemy
 mysql-connector-python
 ipython-sql
 pyyaml
+imblearn
+joblib

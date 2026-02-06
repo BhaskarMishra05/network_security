@@ -155,7 +155,7 @@ Data_Housing/
 
 # mkdocs documentation
 /site
-
+logs/
 # mypy
 .mypy_cache/
 .dmypy.json

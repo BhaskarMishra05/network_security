@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction</title>
+</head>
+<body>
+
+<h2>Phishing Feature Input</h2>
+
+<button type="button" onclick="fillRandom()">Auto Fill Random Data</button>
+<br><br>
+
+<form action="/predict" method="post">
+
+<input name="abnormal_url">
+<input name="phish_long_path">
+<input name="phish_adv_number_count">
+<input name="https">
+<input name="web_ssl_valid">
+<input name="suspicious_extension">
+<input name="phish_adv_many_subdomains">
+<input name="phish_adv_long_domain">
+<input name="phish_urgency_words">
+<input name="web_security_score">
+<input name="url_len">
+<input name="percent_count">
+<input name="plus_count">
+<input name="phish_adv_hyphen_count">
+<input name="phish_multiple_subdomains">
+<input name="phish_adv_many_params">
+<input name="question_mark_count">
+<input name="web_xframe">
+<input name="equal_count">
+<input name="phish_adv_exact_brand_match">
+
+<br><br>
+<button type="submit">Predict</button>
+
+</form>
+
+{% if prediction %}
+<h2>Result: {{ prediction }}</h2>
+{% endif %}
+
+<script>
+function randInt(min, max){
+    return Math.floor(Math.random()*(max-min+1))+min;
+}
+
+function randBinary(){
+    return Math.random() < 0.7 ? 0 : 1;
+}
+
+function fillRandom(){
+
+    document.getElementsByName("abnormal_url")[0].value = randInt(0,1);
+    document.getElementsByName("phish_long_path")[0].value = randInt(0,1);
+    document.getElementsByName("phish_adv_number_count")[0].value = randInt(0,20);
+    document.getElementsByName("https")[0].value = randInt(0,1);
+    document.getElementsByName("web_ssl_valid")[0].value = randInt(0,1);
+    document.getElementsByName("suspicious_extension")[0].value = randInt(0,1);
+    document.getElementsByName("phish_adv_many_subdomains")[0].value = randInt(0,1);
+    document.getElementsByName("phish_adv_long_domain")[0].value = randInt(0,1);
+    document.getElementsByName("phish_urgency_words")[0].value = randInt(0,6);
+    document.getElementsByName("web_security_score")[0].value = randInt(0,4);
+    document.getElementsByName("url_len")[0].value = randInt(20,200);
+    document.getElementsByName("percent_count")[0].value = randInt(0,20);
+    document.getElementsByName("plus_count")[0].value = randInt(0,10);
+    document.getElementsByName("phish_adv_hyphen_count")[0].value = randInt(0,10);
+    document.getElementsByName("phish_multiple_subdomains")[0].value = randInt(0,1);
+    document.getElementsByName("phish_adv_many_params")[0].value = randInt(0,10);
+    document.getElementsByName("question_mark_count")[0].value = randInt(0,10);
+    document.getElementsByName("web_xframe")[0].value = randInt(0,1);
+    document.getElementsByName("equal_count")[0].value = randInt(0,15);
+    document.getElementsByName("phish_adv_exact_brand_match")[0].value = randInt(0,1);
+}
+</script>
+
+</body>
+</html>

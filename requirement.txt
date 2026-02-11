@@ -11,3 +11,4 @@ ipython-sql
 pyyaml
 imblearn
 joblib
+flask
